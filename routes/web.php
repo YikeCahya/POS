@@ -37,3 +37,14 @@ Route::get('/user/{id}/name/{name}', [UserController::class, 'profile']);
 // 4. Halaman Penjualan
 Route::get('/penjualan', [PenjualanController::class, 'index']);
 
+// User Tambah
+Route::get('/user/tambah', [UserController::class, 'tambah']);
+
+// User Simpan
+Route::post('/user/tambah_simpan', [UserController::class, 'tambah_simpan']);
+
+// User Edit
+Route::get('/user/ubah/{id}', [UserController::class, 'ubah']);
+
+// User
+
