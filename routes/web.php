@@ -4,6 +4,21 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PenjualanController;
+use App\Http\Controllers\LevelController;
+use App\Http\Controllers\KategoriController;
+
+route::get('/', function () {
+    return view('welcome');
+});
+
+// Level Route
+Route::get('/level', [LevelController::class, 'index']);
+
+// Kategori Route
+Route::get('/kategori', [KategoriController::class, 'index']);
+
+// User Route
+Route::get('/user', [UserController::class, 'index']);
 
 // 1. Halaman Home
 Route::get('/', [HomeController::class, 'index']);
