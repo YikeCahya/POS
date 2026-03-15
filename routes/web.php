@@ -40,11 +40,15 @@ Route::get('/penjualan', [PenjualanController::class, 'index']);
 // User Tambah
 Route::get('/user/tambah', [UserController::class, 'tambah']);
 
-// User Simpan
+// User Tambah Simpan
 Route::post('/user/tambah_simpan', [UserController::class, 'tambah_simpan']);
 
 // User Edit
 Route::get('/user/ubah/{id}', [UserController::class, 'ubah']);
 
-// User
+// User Edit Simpan
+Route::put('/user/ubah_simpan/{id}', [UserController::class, 'ubah_simpan']);
+
+// User delete
+Route::get('/user/hapus/{id}', [UserController::class, 'hapus']);
 
